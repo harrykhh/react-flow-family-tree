@@ -1,15 +1,15 @@
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: release
 jobs:
-  release-please:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Release

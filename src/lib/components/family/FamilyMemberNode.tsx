@@ -3,7 +3,7 @@ import { Handle, Node, NodeProps, Position } from 'reactflow'
 import Female from './female.svg'
 import Male from './male.svg'
 import './FamilyMemberNode.css'
-import { BadgeData } from '../tree/types.ts'
+import { BadgeData } from '../tree/types'
 
 export type FamilyMemberNodeData = {
   subtitles: string[]
