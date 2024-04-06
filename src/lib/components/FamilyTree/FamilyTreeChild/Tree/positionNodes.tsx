@@ -1,4 +1,4 @@
-import { FamilyMemberNode } from '../family/FamilyMemberNode'
+import { FamilyMemberNode } from '../Family/FamilyMemberNode'
 import { buildEdgeId } from './buildEdges'
 import { GENERATION_HEIGHT, MAX_IN_ROW, NODE_HEIGHT, NODE_WIDTH, SPACING } from './constants'
 import {

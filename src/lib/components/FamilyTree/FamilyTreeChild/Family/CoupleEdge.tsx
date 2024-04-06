@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { BaseEdge, EdgeProps, Node, getStraightPath, useEdges, useNodes, useStore } from 'reactflow'
-import { calcCoupleEdgeYOffset } from '../tree/utils'
+import { calcCoupleEdgeYOffset } from '../Tree/utils'
 
 export type CoupleEdgeProps = EdgeProps
 export const CoupleEdgeTypeKey = 'couple'

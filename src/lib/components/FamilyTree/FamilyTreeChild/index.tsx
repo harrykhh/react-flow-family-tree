@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import ReactFlow, { MiniMap } from 'reactflow'
-import CoupleEdge, { CoupleEdgeTypeKey } from './family/CoupleEdge'
-import { FamilyMemberNodeComp } from './family/FamilyMemberNode'
-import InnerFamilyEdge, { InnerFamilyTypeKey } from './family/InnerFamilyEdge'
-import { buildDataStructure, buildGenerations, buildParentsChildrenStructs } from './tree/buildDataStructure'
-import { buildCouplesEdges, buildEdgesFromParentChildrenRelations } from './tree/buildEdges'
+import CoupleEdge, { CoupleEdgeTypeKey } from './Family/CoupleEdge'
+import { FamilyMemberNodeComp } from './Family/FamilyMemberNode'
+import InnerFamilyEdge, { InnerFamilyTypeKey } from './Family/InnerFamilyEdge'
+import { buildDataStructure, buildGenerations, buildParentsChildrenStructs } from './Tree/buildDataStructure'
+import { buildCouplesEdges, buildEdgesFromParentChildrenRelations } from './Tree/buildEdges'
 import {
   addNodeSelection,
   addNodeVisibilityCallback,
   positionAndBuildFamilyTree,
   positionUnknownGeneration,
-} from './tree/positionNodes'
-import { FamilyMember, FamilyMembers, FamilyRelations, OTHERS_GENERATION } from './tree/types'
-import { nodeColorForMinimap } from './utils'
+} from './Tree/positionNodes'
+import { FamilyMember, FamilyMembers, FamilyRelations, OTHERS_GENERATION } from './Tree/types'
+import { nodeColorForMinimap } from '../../utils'
 
 const nodeTypes = { familyMember: FamilyMemberNodeComp }
 const edgeTypes = {
@@ -27,7 +27,7 @@ export type FamilyTreeProps = {
   onDoubleClick?: (sfdcId: string) => void
 }
 
-export const FamilyTree = ({
+export const FamilyTreeChild = ({
   familyMembers: rawFamilyMembers,
   familyRelations,
   rootMember,

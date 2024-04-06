@@ -1,6 +1,6 @@
 import { Node } from 'reactflow'
-import { FamilyMemberNodeData } from './family/FamilyMemberNode'
-import { FamilyMember, FamilyMembers, FamilyRelations, RelationTypes } from './tree/types'
+import { FamilyMemberNodeData } from './FamilyTree/FamilyTreeChild/Family/FamilyMemberNode'
+import { FamilyMember, FamilyMembers, FamilyRelations, RelationTypes } from './FamilyTree/FamilyTreeChild/Tree/types'
 
 export type RawFamilyMember = {
   id: string

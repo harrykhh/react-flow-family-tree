@@ -1,12 +1,12 @@
 import { Edge } from 'reactflow'
-import { InnerFamilyEdgeData, InnerFamilyTypeKey } from '../family/InnerFamilyEdge'
+import { InnerFamilyEdgeData, InnerFamilyTypeKey } from '../Family/InnerFamilyEdge'
 import { EDGE_YGAP_MODIFIER, GENERATION_HEIGHT } from './constants'
 import { isOddModifer, isRelationSharingKids as isRelationPossibleCouple } from './utils'
 import { EDGES_COLORS } from './constants'
 import { FamilyMember, FamilyRelation, Generation, OTHERS_GENERATION, ParentsChildrens } from './types'
 import uniq from 'lodash/uniq'
 import uniqWith from 'lodash/uniqWith'
-import { CoupleEdgeTypeKey } from '../family/CoupleEdge'
+import { CoupleEdgeTypeKey } from '../Family/CoupleEdge'
 
 type PreEdge = {
   id: string

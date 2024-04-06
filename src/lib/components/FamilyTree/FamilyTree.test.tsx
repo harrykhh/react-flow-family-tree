@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from './utils'
+import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from '../utils'
 import { FamilyTree } from '.'
-import rawFamily from '../../tests/family1.json'
-
+import rawFamily from '../../../test/family1.json'
+// import ResizeObserver from 'resize-observer-polyfill'
+// global.ResizeObserver = ResizeObserver
 // Prepare the data
 const [familyMembersRecord, familyRelationsRecord] = buildFamilyAndRelations(
   rawFamily.familyMembers as RawFamilyMember[],
@@ -21,8 +22,7 @@ describe('renders FamilyTree correctly', () => {
         rootMember={rootMember}
       />,
     )
-    // Replace 'Member Name' with the name of a member you expect in the output
-    const linkElement = screen.getByText(/Member Name/i)
+    const linkElement = screen.getByText(/Tracey/i)
     expect(linkElement).toBeInTheDocument()
   })
 })

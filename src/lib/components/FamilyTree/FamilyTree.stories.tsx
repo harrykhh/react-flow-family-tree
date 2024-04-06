@@ -1,11 +1,9 @@
 import React from 'react'
 import { Meta, StoryFn } from '@storybook/react'
 import { FamilyTree, FamilyTreeProps } from '.'
-import { ReactFlowProvider } from 'reactflow'
-import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from './utils'
-import 'reactflow/dist/style.css'
+import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from '../utils'
 
-import rawFamily from '../../tests/family1.json'
+import rawFamily from '../../../test/family1.json'
 
 export default {
   title: 'FamilyTree/FamilyTree',
@@ -13,15 +11,7 @@ export default {
 } as Meta
 
 // Prepare a Template component
-const Template: StoryFn<FamilyTreeProps> = (args) => (
-  <>
-    <div style={{ height: '100vh', width: '100vw' }}>
-      <ReactFlowProvider>
-        <FamilyTree {...args} />
-      </ReactFlowProvider>
-    </div>
-  </>
-)
+const Template: StoryFn<FamilyTreeProps> = (args) => <FamilyTree {...args} />
 
 // Prepare the data
 const [familyMembersRecord, familyRelationsRecord] = buildFamilyAndRelations(

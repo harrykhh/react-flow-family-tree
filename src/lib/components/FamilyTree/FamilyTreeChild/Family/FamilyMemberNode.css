@@ -26,11 +26,10 @@
   }
 
   .content {
-    padding: 5px;
     font-size: 12px;
     width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 
     .relation {

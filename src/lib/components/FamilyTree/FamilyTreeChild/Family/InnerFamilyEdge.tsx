@@ -1,6 +1,6 @@
 import uniqBy from 'lodash/uniqBy'
 import { BaseEdge, EdgeProps, getSmoothStepPath, Position, useStore } from 'reactflow'
-import { EDGE_XGAP_MODIFIER, NODE_HEIGHT } from '../tree/constants'
+import { EDGE_XGAP_MODIFIER, NODE_HEIGHT } from '../Tree/constants'
 import { useCallback } from 'react'
 
 export type InnerFamilyEdgeData = {
