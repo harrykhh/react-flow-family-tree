@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react'
+import DocumentationTemplate from './DocumentationTemplate.mdx'
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -7,6 +8,10 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+    },
+    docs: {
+      toc: true,
+      page: DocumentationTemplate,
     },
   },
 }

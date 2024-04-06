@@ -8,6 +8,7 @@ import rawFamily from '../../../test/family1.json'
 export default {
   title: 'FamilyTree/FamilyTree',
   component: FamilyTree,
+  tags: ['autodocs'],
 } as Meta
 
 // Prepare a Template component
