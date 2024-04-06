@@ -2546,7 +2546,7 @@ packages:
       commander: 6.2.1
       cross-spawn: 7.0.3
       detect-indent: 6.1.0
-      envinfo: 7.11.1
+      envinfo: 7.12.0
       execa: 5.1.1
       find-up: 5.0.0
       fs-extra: 11.2.0
@@ -5250,8 +5250,8 @@ packages:
     engines: {node: '>=0.12'}
     dev: true
 
-  /envinfo@7.11.1:
-    resolution: {integrity: sha512-8PiZgZNIB4q/Lw4AhOvAfB/ityHAd2bli3lESSWmWSzSsl5dKpy5N1d1Rfkd2teq/g9xN90lc6o98DOjMeYHpg==}
+  /envinfo@7.12.0:
+    resolution: {integrity: sha512-Iw9rQJBGpJRd3rwXm9ft/JiGoAZmLxxJZELYDQoPRZ4USVhkKtIcNBPw6U+/K2mBpaqM25JSV6Yl4Az9vO2wJg==}
     engines: {node: '>=4'}
     hasBin: true
     dev: true

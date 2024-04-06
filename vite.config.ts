@@ -42,6 +42,7 @@ const app = async (): Promise<UserConfigExport> => {
     test: {
       globals: true,
       environment: 'jsdom',
+      setupFiles: 'src/setupTests.ts',
     },
   })
 }

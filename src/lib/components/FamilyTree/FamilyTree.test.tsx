@@ -3,8 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from '../utils'
 import { FamilyTree } from '.'
 import rawFamily from '../../../test/family1.json'
-// import ResizeObserver from 'resize-observer-polyfill'
-// global.ResizeObserver = ResizeObserver
+
 // Prepare the data
 const [familyMembersRecord, familyRelationsRecord] = buildFamilyAndRelations(
   rawFamily.familyMembers as RawFamilyMember[],
