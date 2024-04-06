@@ -20,7 +20,7 @@ const edgeTypes = {
   [CoupleEdgeTypeKey]: CoupleEdge,
 }
 
-type FamilyTreeProps = {
+export type FamilyTreeProps = {
   familyMembers: FamilyMembers
   familyRelations: FamilyRelations
   rootMember: FamilyMember

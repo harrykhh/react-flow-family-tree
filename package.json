@@ -2,24 +2,24 @@
   "name": "reactflow-family-tree",
   "private": false,
   "version": "1.0.0",
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/harryhkh/reactflow-family-tree"
   },
-  "main": "./dist/vite-component-library-template.umd.js",
-  "module": "./dist/vite-component-library-template.es.js",
+  "main": "./dist/reactflow-family-tree.umd.js",
+  "module": "./dist/reactflow-family-tree.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/vite-component-library-template.es.js",
-      "require": "./dist/vite-component-library-template.umd.js"
+      "import": "./dist/reactflow-family-tree.es.js",
+      "require": "./dist/reactflow-family-tree.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
   "engines": {
-    "node": "18.13.0"
+    "node": "20.12.1"
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -33,25 +33,26 @@
     "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
   },
   "dependencies": {
-    "@storybook/addon-themes": "^8.0.5",
+    "@storybook/addon-themes": "^8.0.6",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "reactflow": "^11.10.4"
+    "reactflow": "^11.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
-    "@storybook/addon-essentials": "^8.0.5",
-    "@storybook/addon-interactions": "^8.0.5",
-    "@storybook/addon-links": "^8.0.5",
+    "@storybook/addon-essentials": "^8.0.6",
+    "@storybook/addon-interactions": "^8.0.6",
+    "@storybook/addon-links": "^8.0.6",
     "@storybook/addon-styling-webpack": "^1.0.0",
-    "@storybook/blocks": "^8.0.5",
-    "@storybook/react": "^8.0.5",
-    "@storybook/react-vite": "^8.0.5",
+    "@storybook/blocks": "^8.0.6",
+    "@storybook/react": "^8.0.6",
+    "@storybook/react-vite": "^8.0.6",
     "@storybook/testing-library": "^0.2.2",
+    "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@types/lodash": "^4.17.0",
-    "@types/node": "^20.12.4",
+    "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
@@ -74,8 +75,8 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prop-types": "^15.8.1",
-    "storybook": "^8.0.5",
-    "typescript": "^5.4.3",
+    "storybook": "^8.0.6",
+    "typescript": "^5.4.4",
     "vite": "^5.2.8",
     "vite-plugin-dts": "^3.8.1",
     "vitest": "^1.4.0"
