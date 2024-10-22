@@ -26,7 +26,7 @@ class DOMMatrixReadOnly {
     this.m22 = scale !== undefined ? +scale : 1
   }
 }
-// @ts-ignore
+// @ts-expect-error n/a
 global.DOMMatrixReadOnly = DOMMatrixReadOnly
 
 Object.defineProperties(global.HTMLElement.prototype, {
@@ -41,7 +41,6 @@ Object.defineProperties(global.HTMLElement.prototype, {
     },
   },
 })
-
 ;(global.SVGElement as any).prototype.getBBox = () => ({
   x: 0,
   y: 0,

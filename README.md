@@ -6,6 +6,21 @@ built with [React flow](https://github.com/xyflow/xyflow).
 example data (fake ofc):
 ![example](https://github.com/fokolo/family-tree/blob/main/docs/main.png)
 
+## Table of Contents
+
+- [Design Resources](#design-resources)
+
+  - [Figma](#figma)
+  - [UI/UX Design Guidelines](#uiux-design-guidelines)
+  - [Design Assets](#design-assets)
+
+- [Development Resources](#development-resources)
+  - [Coding Standards](#coding-standards)
+  - [Version Control](#version-control)
+  - [Development Tools](#development-tools)
+
+---
+
 ## Features
 
 1. The Family Tree **automatically arranges** families based on with inner family advantages.

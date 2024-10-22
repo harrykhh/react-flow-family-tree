@@ -29,13 +29,7 @@ function Chips({ label, bgColor, textColor }: BadgeData) {
   )
 }
 
-function changeLabelVisibility(id: string, visibility: string) {
-  const elementById = document.getElementById(id)
-  if (elementById !== null) {
-    elementById.style.visibility = visibility
-  }
-}
-function FamilyMemberNodeUI({ id, data }: NodeProps<FamilyMemberNodeData>) {
+function FamilyMemberNodeUI({ data }: NodeProps<FamilyMemberNodeData>) {
   const titleBgColor = data.titleBgColor
   const titleTextColor = data.titleTextColor
   const profileImg = useMemo(() => {

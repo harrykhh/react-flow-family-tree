@@ -14,7 +14,7 @@ const rootMember = familyMembersRecord['3']
 // Write the test
 describe('renders FamilyTree correctly', () => {
   it('should render', async () => {
-    const { getByText } = render(
+    render(
       <FamilyTree
         familyMembers={familyMembersRecord}
         familyRelations={familyRelationsRecord}
