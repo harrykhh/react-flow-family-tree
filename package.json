@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.12.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harryhkh/reactflow-family-tree"
+    "url": "https://github.com/harrykhh/react-flow-family-tree"
   },
   "main": "./dist/reactflow-family-tree.umd.js",
   "module": "./dist/reactflow-family-tree.es.js",
