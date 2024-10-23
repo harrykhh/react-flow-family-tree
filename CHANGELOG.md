@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.0...v1.0.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* debug publish.yml ([723d0d3](https://github.com/harrykhh/react-flow-family-tree/commit/723d0d3aa6e32f6c7f4781ab5fcad99af01ea3c8))
+
 ## 1.0.0 (2024-10-23)
 
 
