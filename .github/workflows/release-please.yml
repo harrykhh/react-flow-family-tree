@@ -16,7 +16,7 @@ jobs:
       - name: Release
         id: release
         if: ${{ github.ref_name == 'master' }}
-        uses: google-github-actions/release-please-action@v3
+        uses: googleapis/release-please-action@v4
         with:
           release-type: node
           default-branch: master
