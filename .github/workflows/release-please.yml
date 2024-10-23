@@ -27,17 +27,18 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         if: ${{ steps.release.outputs.releases_created }}
         with:
-          version: 8
+          version: 9
+          run_install: false
 
       # Setup .npmrc file to publish to npm
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org/'
           cache: 'pnpm'
         if: ${{ steps.release.outputs.releases_created }}
 
@@ -50,7 +51,7 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
-        run: npm run publish
+        run: pnpm publish
         if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM }}
