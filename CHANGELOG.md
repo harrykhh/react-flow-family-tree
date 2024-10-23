@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.3...v1.0.4) (2024-10-23)
+
+
+### Bug Fixes
+
+* clean up + test release increment ([63a473d](https://github.com/harrykhh/react-flow-family-tree/commit/63a473d2d3e51ded7eda96b6d06dbb2aefd6ce98))
+
 ## [1.0.3](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.2...v1.0.3) (2024-10-23)
 
 
