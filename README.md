@@ -3,22 +3,6 @@
 This was a quick sideproject done with the help of few friends.
 built with [React flow](https://github.com/xyflow/xyflow).
 
-example data (fake ofc):
-![example](https://github.com/fokolo/family-tree/blob/main/docs/main.png)
-
-## Table of Contents
-
-- [Design Resources](#design-resources)
-
-  - [Figma](#figma)
-  - [UI/UX Design Guidelines](#uiux-design-guidelines)
-  - [Design Assets](#design-assets)
-
-- [Development Resources](#development-resources)
-  - [Coding Standards](#coding-standards)
-  - [Version Control](#version-control)
-  - [Development Tools](#development-tools)
-
 ---
 
 ## Features
@@ -33,23 +17,31 @@ example data (fake ofc):
 
 ## Getting Started
 
+1. Install from npm:
+
+```bash
+npm i reactflow-family-tree
+```
+
+## Getting Started for Development
+
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/family-tree-react-flow.git
+git clone https://github.com/harrykhh/react-flow-family-tree.git
 ```
 
 2. Install dependencies:
 
 ```bash
 cd family-tree-react-flow
-npm install
+pnpm install
 ```
 
 Start the development server (using vite):
 
 ```bash
-npm start
+pnpm dev
 ```
 
 ## Contributing
