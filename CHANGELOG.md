@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.1...v1.0.2) (2024-10-23)
+
+
+### Bug Fixes
+
+* **package.json:** fix github link ([35ed19a](https://github.com/harrykhh/react-flow-family-tree/commit/35ed19a60e721c0767541a3e5c590dd5c59aeeab))
+
 ## [1.0.1](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.0...v1.0.1) (2024-10-23)
 
 
