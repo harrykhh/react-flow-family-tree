@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.5...v1.0.6) (2024-10-24)
+
+
+### Bug Fixes
+
+* **index.ts:** added missing utils imports ([e11422c](https://github.com/harrykhh/react-flow-family-tree/commit/e11422c2f39e457a2b13e925eb078ba0aa8d6d56))
+
 ## [1.0.5](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.4...v1.0.5) (2024-10-23)
 
 
