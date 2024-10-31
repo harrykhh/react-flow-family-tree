@@ -9,6 +9,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Check if PR created by
+        if: ${{ github.actor == 'github-actions' }}
+        run: echo "Checking if PR by github-actions"
+
       - name: Check if PR merge
         if: ${{ github.event.pull_request.merged }}
         run: echo "Checking if PR Merge"
