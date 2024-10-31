@@ -21,6 +21,7 @@ built with [React flow](https://github.com/xyflow/xyflow).
 
 ```bash
 npm i reactflow-family-tree
+pnpm add reactflow-family-tree
 ```
 
 ## Getting Started for Development
