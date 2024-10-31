@@ -29,6 +29,7 @@ npm i reactflow-family-tree
 
 ```bash
 git clone https://github.com/harrykhh/react-flow-family-tree.git
+test
 ```
 
 2. Install dependencies:
