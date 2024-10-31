@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check if PR merge
-        uses: pnpm/action-setup@v4
         if: ${{ github.event.pull_request.merged }}
+        run: echo "Checking if PR Merge"
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
