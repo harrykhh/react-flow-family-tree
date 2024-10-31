@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.7...v1.0.8) (2024-10-31)
+
+
+### Bug Fixes
+
+* **publish.yml:** yml issues ([b4d9dd3](https://github.com/harrykhh/react-flow-family-tree/commit/b4d9dd30cc9d0b9b51c141803ed4596e7104cfc2))
+
 ## [1.0.7](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.6...v1.0.7) (2024-10-31)
 
 
