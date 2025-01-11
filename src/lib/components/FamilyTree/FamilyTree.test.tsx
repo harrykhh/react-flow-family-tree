@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from '../utils'
 import { FamilyTree } from '.'
-import rawFamily from '../../../test/family1.json'
+import rawFamily from '../../../test/family.json'
 
 // Prepare the data
 const [familyMembersRecord, familyRelationsRecord] = buildFamilyAndRelations(

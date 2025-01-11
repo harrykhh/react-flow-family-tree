@@ -1,0 +1,347 @@
+{
+  "familyMembers": [
+    {
+      "id": "0",
+      "data": {
+        "title": "Diana, Princess of Wales",
+        "titleBgColor": "rgb(128, 0, 32)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: July 1, 1961", "Died: August 31, 1997"],
+        "sex": "F",
+        "badges": [{ "label": "Princess", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "1",
+      "data": {
+        "title": "John Spencer",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: January 24, 1924", "Died: March 29, 1992"],
+        "sex": "M",
+        "badges": [{ "label": "8th Earl Spencer", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "title": "Frances Roche",
+        "titleBgColor": "rgb(128, 0, 32)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: January 20, 1936", "Died: June 3, 2004"],
+        "sex": "F"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "title": "Charles Spencer",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: May 20, 1964"],
+        "sex": "M",
+        "badges": [{ "label": "9th Earl Spencer", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "title": "King Charles III",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: November 14, 1948"],
+        "sex": "M",
+        "badges": [{ "label": "King", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "title": "Prince William",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: June 21, 1982"],
+        "sex": "M",
+        "badges": [{ "label": "Prince of Wales", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "title": "Prince Harry",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: September 15, 1984"],
+        "sex": "M",
+        "badges": [{ "label": "Duke of Sussex", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "title": "Catherine",
+        "titleBgColor": "rgb(128, 0, 32)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: January 9, 1982"],
+        "sex": "F",
+        "badges": [{ "label": "Princess of Wales", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "title": "Meghan",
+        "titleBgColor": "rgb(128, 0, 32)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: August 4, 1981"],
+        "sex": "F",
+        "badges": [{ "label": "Duchess of Sussex", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "9",
+      "data": {
+        "title": "Prince George",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: July 22, 2013"],
+        "sex": "M",
+        "badges": [{ "label": "Prince", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "10",
+      "data": {
+        "title": "Princess Charlotte",
+        "titleBgColor": "rgb(128, 0, 32)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: May 2, 2015"],
+        "sex": "F",
+        "badges": [{ "label": "Princess", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    },
+    {
+      "id": "11",
+      "data": {
+        "title": "Prince Louis",
+        "titleBgColor": "rgb(0, 0, 128)",
+        "titleTextColor": "white",
+        "subtitles": ["Born: April 23, 2018"],
+        "sex": "M",
+        "badges": [{ "label": "Prince", "bgColor": "rgb(218, 165, 32)", "textColor": "white" }]
+      }
+    }
+  ],
+  "familyRelations": [
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "1",
+      "toId": "0",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "2",
+      "toId": "0",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "1",
+      "toId": "3",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "2",
+      "toId": "3",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Partner",
+      "prettyType": "Former Spouse",
+      "fromId": "0",
+      "toId": "4",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "0",
+      "toId": "5",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "4",
+      "toId": "5",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "0",
+      "toId": "6",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "4",
+      "toId": "6",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Partner",
+      "prettyType": "Spouse",
+      "fromId": "5",
+      "toId": "7",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Partner",
+      "prettyType": "Spouse",
+      "fromId": "6",
+      "toId": "8",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Sibling",
+      "prettyType": "Brother",
+      "fromId": "3",
+      "toId": "0",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "5",
+      "toId": "9",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "7",
+      "toId": "9",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "5",
+      "toId": "10",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "7",
+      "toId": "10",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Father",
+      "fromId": "5",
+      "toId": "11",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Parent",
+      "prettyType": "Mother",
+      "fromId": "7",
+      "toId": "11",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Grandparent",
+      "prettyType": "Grandmother",
+      "fromId": "0",
+      "toId": "9",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Grandparent",
+      "prettyType": "Grandmother",
+      "fromId": "0",
+      "toId": "10",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Grandparent",
+      "prettyType": "Grandfather",
+      "fromId": "4",
+      "toId": "10",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Grandparent",
+      "prettyType": "Grandfather",
+      "fromId": "4",
+      "toId": "11",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Grandparent",
+      "prettyType": "Grandfather",
+      "fromId": "4",
+      "toId": "9",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Grandparent",
+      "prettyType": "Grandmother",
+      "fromId": "0",
+      "toId": "11",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Sibling",
+      "prettyType": "Brother",
+      "fromId": "9",
+      "toId": "10",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Sibling",
+      "prettyType": "Brother",
+      "fromId": "9",
+      "toId": "11",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Sibling",
+      "prettyType": "Sister",
+      "fromId": "10",
+      "toId": "11",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Sibling",
+      "prettyType": "Brother",
+      "fromId": "6",
+      "toId": "5",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Uncle",
+      "prettyType": "Uncle",
+      "fromId": "11",
+      "toId": "6",
+      "isInnerFamily": true
+    },
+    {
+      "relationType": "Uncle",
+      "prettyType": "Uncle",
+      "fromId": "10",
+      "toId": "6",
+      "isInnerFamily": true
+    }
+  ]
+}
