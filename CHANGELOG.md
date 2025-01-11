@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2025-01-11)
+
+
+### Bug Fixes
+
+* **readme:** fix readme ([2df041b](https://github.com/harrykhh/react-flow-family-tree/commit/2df041b5db74ce4df696b855f61b936cce4755b6))
+
 ## [1.0.9](https://github.com/harrykhh/react-flow-family-tree/compare/v1.0.8...v1.0.9) (2024-10-31)
 
 ### Bug Fixes
