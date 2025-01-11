@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react'
 import { FamilyTree, FamilyTreeProps } from '.'
 import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from '../utils'
 
-import rawFamily from '../../../test/family1.json'
+import rawFamily from '../../../test/family.json'
 
 export default {
   title: 'Components/FamilyTree',
@@ -19,7 +19,7 @@ const [familyMembersRecord, familyRelationsRecord] = buildFamilyAndRelations(
   rawFamily.familyMembers as RawFamilyMember[],
   rawFamily.familyRelations as RawFamilyRelation[],
 )
-const rootMember = familyMembersRecord['0']
+const rootMember = familyMembersRecord['11']
 
 // Create a story for the default view
 export const Default = Template.bind({})

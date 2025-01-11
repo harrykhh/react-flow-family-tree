@@ -1,7 +1,9 @@
 # React Flow Family Tree
 
-This was a quick sideproject done with the help of few friends.
-built with [React flow](https://github.com/xyflow/xyflow).
+This project is a React component library for creating family trees using [React flow](https://github.com/xyflow/xyflow).
+
+![Sample Family Tree](src/test/image.png)
+[Sample Family Tree Data JSON](src/test/family.json)
 
 ---
 
@@ -15,13 +17,44 @@ built with [React flow](https://github.com/xyflow/xyflow).
 6. **Portrait Image support** - Include images to personalize your family tree.
 7. Very configurable
 
-## Getting Started
+## Installation
 
-1. Install from npm:
+1. To install the library, use npm or pnpm:
 
 ```bash
 npm i reactflow-family-tree
 pnpm add reactflow-family-tree
+```
+
+## Usage
+
+1. Here is a basic example of how to use the `reactflow-family-tree` component:
+
+```tsx
+import React from 'react'
+import ReactFlowFamilyTree from 'reactflow-family-tree'
+
+const App = () => {
+  const familyData = {
+    nodes: [
+      { id: '1', name: 'John Doe', gender: 'male', image: 'path/to/image1.jpg' },
+      { id: '2', name: 'Jane Smith', gender: 'female', image: 'path/to/image2.jpg' },
+      { id: '3', name: 'Alice Doe', gender: 'female', image: 'path/to/image3.jpg' },
+      { id: '4', name: 'Bob Doe', gender: 'male', image: 'path/to/image4.jpg' },
+    ],
+    edges: [
+      { source: '1', target: '2', type: 'married' },
+      { source: '1', target: '3', type: 'parent' },
+      { source: '2', target: '3', type: 'parent' },
+      { source: '1', target: '4', type: 'parent' },
+      { source: '2', target: '4', type: 'parent' },
+    ],
+  }
+
+  return <ReactFlowFamilyTree data={familyData} />
+}
+
+export default App
 ```
 
 ## Getting Started for Development
