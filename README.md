@@ -4,8 +4,6 @@ This project is a React component library for creating family trees using [React
 
 ![Sample Family Tree](src/test/image.png)
 
-
-
 [Sample Family Tree Data JSON](src/test/family.json)
 
 ---
@@ -35,17 +33,17 @@ pnpm add reactflow-family-tree
 
 ```tsx
 import React from 'react'
-import ReactFlowFamilyTree from 'reactflow-family-tree'
+import FamilyTree from 'reactflow-family-tree'
 
 const App = () => {
   const familyData = {
-    nodes: [
+    familyMembers: [
       { id: '1', name: 'John Doe', gender: 'male', image: 'path/to/image1.jpg' },
       { id: '2', name: 'Jane Smith', gender: 'female', image: 'path/to/image2.jpg' },
       { id: '3', name: 'Alice Doe', gender: 'female', image: 'path/to/image3.jpg' },
       { id: '4', name: 'Bob Doe', gender: 'male', image: 'path/to/image4.jpg' },
     ],
-    edges: [
+    familyRelations: [
       { source: '1', target: '2', type: 'married' },
       { source: '1', target: '3', type: 'parent' },
       { source: '2', target: '3', type: 'parent' },
@@ -54,7 +52,7 @@ const App = () => {
     ],
   }
 
-  return <ReactFlowFamilyTree data={familyData} />
+  return <FamilyTree data={familyData} />
 }
 
 export default App

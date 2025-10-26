@@ -174,7 +174,7 @@ export function addNodeVisibilityCallback(
   nodes: FamilyMemberNode[],
   hiddenNodeIds: string[],
   setHiddenNodeIds: (newIds: string[]) => void,
-) {
+): FamilyMemberNode[] {
   return nodes.map((node) => {
     return {
       ...node,
