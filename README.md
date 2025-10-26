@@ -32,27 +32,110 @@ pnpm add reactflow-family-tree
 1. Here is a basic example of how to use the `reactflow-family-tree` component:
 
 ```tsx
-import React from 'react'
 import FamilyTree from 'reactflow-family-tree'
-
+import { RawFamilyMember, buildFamilyAndRelations, RawFamilyRelation } from 'reactflow-family-tree'
 const App = () => {
   const familyData = {
     familyMembers: [
-      { id: '1', name: 'John Doe', gender: 'male', image: 'path/to/image1.jpg' },
-      { id: '2', name: 'Jane Smith', gender: 'female', image: 'path/to/image2.jpg' },
-      { id: '3', name: 'Alice Doe', gender: 'female', image: 'path/to/image3.jpg' },
-      { id: '4', name: 'Bob Doe', gender: 'male', image: 'path/to/image4.jpg' },
+      {
+        id: '1',
+        data: {
+          title: 'John Doe',
+          titleBgColor: 'rgb(0, 0, 128)',
+          titleTextColor: 'white',
+          subtitles: ['Born: January 15, 1970'],
+          sex: 'M',
+          badges: [{ label: 'Father', bgColor: 'rgb(218, 165, 32)', textColor: 'white' }],
+        },
+      },
+      {
+        id: '2',
+        data: {
+          title: 'Jane Smith',
+          titleBgColor: 'rgb(128, 0, 32)',
+          titleTextColor: 'white',
+          subtitles: ['Born: March 22, 1972'],
+          sex: 'F',
+          badges: [{ label: 'Mother', bgColor: 'rgb(218, 165, 32)', textColor: 'white' }],
+        },
+      },
+      {
+        id: '3',
+        data: {
+          title: 'Alice Doe',
+          titleBgColor: 'rgb(128, 0, 32)',
+          titleTextColor: 'white',
+          subtitles: ['Born: June 5, 1995'],
+          sex: 'F',
+          badges: [{ label: 'Daughter', bgColor: 'rgb(218, 165, 32)', textColor: 'white' }],
+        },
+      },
+      {
+        id: '4',
+        data: {
+          title: 'Bob Doe',
+          titleBgColor: 'rgb(0, 0, 128)',
+          titleTextColor: 'white',
+          subtitles: ['Born: August 12, 1997'],
+          sex: 'M',
+          badges: [{ label: 'Son', bgColor: 'rgb(218, 165, 32)', textColor: 'white' }],
+        },
+      },
     ],
     familyRelations: [
-      { source: '1', target: '2', type: 'married' },
-      { source: '1', target: '3', type: 'parent' },
-      { source: '2', target: '3', type: 'parent' },
-      { source: '1', target: '4', type: 'parent' },
-      { source: '2', target: '4', type: 'parent' },
+      {
+        relationType: 'Partner',
+        prettyType: 'Spouse',
+        fromId: '1',
+        toId: '2',
+        isInnerFamily: true,
+      },
+      {
+        relationType: 'Parent',
+        prettyType: 'Father',
+        fromId: '1',
+        toId: '3',
+        isInnerFamily: true,
+      },
+      {
+        relationType: 'Parent',
+        prettyType: 'Mother',
+        fromId: '2',
+        toId: '3',
+        isInnerFamily: true,
+      },
+      {
+        relationType: 'Parent',
+        prettyType: 'Father',
+        fromId: '1',
+        toId: '4',
+        isInnerFamily: true,
+      },
+      {
+        relationType: 'Parent',
+        prettyType: 'Mother',
+        fromId: '2',
+        toId: '4',
+        isInnerFamily: true,
+      },
+      {
+        relationType: 'Sibling',
+        prettyType: 'Sister',
+        fromId: '3',
+        toId: '4',
+        isInnerFamily: true,
+      },
     ],
   }
-
-  return <FamilyTree data={familyData} />
+  // Prepare the data
+  const [familyMembersRecord, familyRelationsRecord] = buildFamilyAndRelations(
+    familyData.familyMembers as RawFamilyMember[],
+    familyData.familyRelations as RawFamilyRelation[],
+  )
+  const rootMember = familyMembersRecord['4']
+  return (
+    <FamilyTree familyMembers={familyMembersRecord} familyRelations={familyRelationsRecord} rootMember={rootMember} />
+  )
 }
 
 export default App
