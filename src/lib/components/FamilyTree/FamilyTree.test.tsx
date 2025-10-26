@@ -21,7 +21,7 @@ describe('renders FamilyTree correctly', () => {
         rootMember={rootMember}
       />,
     )
-    const linkElement = screen.getByText(/Tracey/i)
+    const linkElement = screen.getByText(/Princess/i)
     expect(linkElement).toBeInTheDocument()
   })
 })
